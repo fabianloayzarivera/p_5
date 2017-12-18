@@ -2,7 +2,9 @@
 
 #include <stdio.h>
 #include <string.h>
-FILE* open(char *filename, char* openMode);
-void  close(FILE *ptr);
-int   write(FILE* ptr, char *buffer, int cant);
-int   read(FILE* ptr, char bufferRead[], int cant);
+
+typedef FILE TypeFile;
+TypeFile* open(TypeFile* ptr, char *filename, char* openMode);
+void  close(TypeFile* ptr);
+int   write(TypeFile* ptr, char *buffer, int cant);
+int   read(TypeFile* ptr, char bufferRead[], int cant);
