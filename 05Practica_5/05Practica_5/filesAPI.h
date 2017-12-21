@@ -1,7 +1,6 @@
 #pragma once
 
 #include <stdio.h>
-#include <string.h>
 
 typedef FILE TypeFile;
 TypeFile* open(TypeFile* ptr, char *filename, char* openMode);
